@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Interactif - Projets & Réalisations | Anass</title>
+    <meta name="description" content="Découvrez mes projets de développement web : e-commerce marocain, sites d'entreprise, applications React. Filtrage par technologie et secteur d'activité." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fanassport7208back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-soft border-b border-secondary-200">
+        <nav class="container-max flex items-center justify-between py-4">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                    <span class="text-white font-inter font-bold text-lg">A</span>
+                </div>
+                <span class="font-inter font-semibold text-xl text-secondary-900">Anass</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="homepage_developer_portfolio_hub.html" class="text-secondary-600 hover:text-primary transition-quick">Accueil</a>
+                <a href="portfolio_showcase_interactive_project_gallery.html" class="text-primary font-medium hover:text-accent transition-quick">Portfolio</a>
+                <a href="about_professional_story.html" class="text-secondary-600 hover:text-primary transition-quick">À Propos</a>
+                <a href="services_transparent_pricing.html" class="text-secondary-600 hover:text-primary transition-quick">Services</a>
+                <a href="case_studies_deep_project_analysis.html" class="text-secondary-600 hover:text-primary transition-quick">Études de Cas</a>
+                <a href="contact_collaboration_hub.html" class="text-secondary-600 hover:text-primary transition-quick">Contact</a>
+            </div>
+
+            <!-- Language Toggle & CTA -->
+            <div class="flex items-center space-x-4">
+                <div class="hidden sm:flex items-center bg-surface rounded-lg p-1">
+                    <button class="px-3 py-1 bg-primary text-white rounded-md text-sm font-medium">FR</button>
+                    <button class="px-3 py-1 text-secondary-600 rounded-md text-sm font-medium hover:text-primary transition-quick">EN</button>
+                </div>
+                <a href="contact_collaboration_hub.html" class="btn-primary">Démarrer un Projet</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden p-2" id="mobile-menu-btn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t border-secondary-200" id="mobile-menu">
+            <div class="px-4 py-4 space-y-4">
+                <a href="homepage_developer_portfolio_hub.html" class="block text-secondary-600 hover:text-primary transition-quick">Accueil</a>
+                <a href="portfolio_showcase_interactive_project_gallery.html" class="block text-primary font-medium">Portfolio</a>
+                <a href="about_professional_story.html" class="block text-secondary-600 hover:text-primary transition-quick">À Propos</a>
+                <a href="services_transparent_pricing.html" class="block text-secondary-600 hover:text-primary transition-quick">Services</a>
+                <a href="case_studies_deep_project_analysis.html" class="block text-secondary-600 hover:text-primary transition-quick">Études de Cas</a>
+                <a href="contact_collaboration_hub.html" class="block text-secondary-600 hover:text-primary transition-quick">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-primary-50 via-white to-accent-50">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl lg:text-5xl font-inter font-bold text-secondary-900 mb-6 leading-tight">
+                    Portfolio Interactif
+                    <span class="text-gradient block">Projets & Réalisations</span>
+                </h1>
+                <p class="text-lg text-secondary-600 max-w-3xl mx-auto leading-relaxed">
+                    Découvrez mes projets de développement web avec des solutions sur mesure pour entreprises marocaines et internationales. 
+                    Filtrez par technologie, secteur d'activité et complexité pour trouver des projets similaires à vos besoins.
+                </p>
+            </div>
+
+            <!-- Portfolio Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+                <div class="text-center">
+                    <div class="text-3xl font-inter font-bold text-primary mb-2">50+</div>
+                    <div class="text-sm text-secondary-600">Projets Réalisés</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-inter font-bold text-accent mb-2">15+</div>
+                    <div class="text-sm text-secondary-600">Technologies</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-inter font-bold text-success mb-2">98%</div>
+                    <div class="text-sm text-secondary-600">Clients Satisfaits</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-inter font-bold text-secondary-900 mb-2">5+</div>
+                    <div class="text-sm text-secondary-600">Années d'Expérience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Filtering Section -->
+    <section class="section-padding bg-white">
+        <div class="container-max">
+            <!-- Filter Controls -->
+            <div class="bg-surface rounded-lg p-6 mb-12 shadow-soft">
+                <div class="flex flex-col lg:flex-row gap-6">
+                    <!-- Search Bar -->
+                    <div class="flex-1">
+                        <div class="relative">
+                            <input type="text" placeholder="Rechercher un projet, technologie ou secteur..." class="input-field pl-12 pr-4" id="search-input" />
+                            <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Technology Filter -->
+                    <div class="lg:w-48">
+                        <select class="input-field" id="tech-filter">
+                            <option value>Toutes les Technologies</option>
+                            <option value="react">React</option>
+                            <option value="nodejs">Node.js</option>
+                            <option value="php">PHP</option>
+                            <option value="wordpress">WordPress</option>
+                            <option value="laravel">Laravel</option>
+                            <option value="vue">Vue.js</option>
+                        </select>
+                    </div>
+
+                    <!-- Industry Filter -->
+                    <div class="lg:w-48">
+                        <select class="input-field" id="industry-filter">
+                            <option value>Tous les Secteurs</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="corporate">Entreprise</option>
+                            <option value="startup">Startup</option>
+                            <option value="education">Éducation</option>
+                            <option value="healthcare">Santé</option>
+                            <option value="restaurant">Restaurant</option>
+                        </select>
+                    </div>
+
+                    <!-- Complexity Filter -->
+                    <div class="lg:w-48">
+                        <select class="input-field" id="complexity-filter">
+                            <option value>Toute Complexité</option>
+                            <option value="simple">Simple</option>
+                            <option value="medium">Intermédiaire</option>
+                            <option value="complex">Complexe</option>
+                        </select>
+                    </div>
+
+                    <!-- Reset Button -->
+                    <button class="btn-secondary flex items-center justify-center px-4" id="reset-filters">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                        Reset
+                    </button>
+                </div>
+
+                <!-- Active Filters Display -->
+                <div class="mt-4 flex flex-wrap gap-2" id="active-filters">
+                    <!-- Active filter tags will be inserted here -->
+                </div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                <!-- Project 1: Moroccan E-commerce -->
+                <div class="project-card group" data-tech="react,nodejs" data-industry="ecommerce" data-complexity="complex">
+                    <div class="card group-hover:shadow-elevated transition-smooth cursor-pointer" onclick="openProjectModal('project1')">
+                        <div class="relative mb-6 overflow-hidden rounded-lg">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Boutique en ligne marocaine" class="w-full h-48 object-cover group-hover:scale-105 transition-smooth" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            
+                            <!-- Performance Badge -->
+                            <div class="absolute top-4 left-4 bg-success text-white px-3 py-1 rounded-full text-sm font-medium">
+                                +150% Ventes
+                            </div>
+                            
+                            <!-- Live Preview Button -->
+                            <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-smooth">
+                                <button class="bg-white/90 backdrop-blur-soft text-secondary-900 p-2 rounded-full hover:bg-white transition-quick">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-inter font-semibold text-xl text-secondary-900">MarocShop - E-commerce</h3>
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-3 h-3 bg-success rounded-full"></div>
+                                    <span class="text-sm text-secondary-600">En ligne</span>
+                                </div>
+                            </div>
+
+                            <p class="text-secondary-600">
+                                Plateforme e-commerce complète avec intégration CMI, support multilingue (AR/FR), et optimisation mobile pour le marché marocain.
+                            </p>
+
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">React</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">MongoDB</span>
+                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Stripe</span>
+                            </div>
+
+                            <!-- Key Metrics -->
+                            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-secondary-200">
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-primary">2.1s</div>
+                                    <div class="text-xs text-secondary-500">Temps de chargement</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-accent">4.2%</div>
+                                    <div class="text-xs text-secondary-500">Taux de conversion</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-success">98%</div>
+                                    <div class="text-xs text-secondary-500">Score mobile</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: French Corporate Website -->
+                <div class="project-card group" data-tech="wordpress,php" data-industry="corporate" data-complexity="medium">
+                    <div class="card group-hover:shadow-elevated transition-smooth cursor-pointer" onclick="openProjectModal('project2')">
+                        <div class="relative mb-6 overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Site corporate français" class="w-full h-48 object-cover group-hover:scale-105 transition-smooth" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            
+                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
+                                +200% Leads
+                            </div>
+                            
+                            <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-smooth">
+                                <button class="bg-white/90 backdrop-blur-soft text-secondary-900 p-2 rounded-full hover:bg-white transition-quick">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-inter font-semibold text-xl text-secondary-900">TechConseil France</h3>
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-3 h-3 bg-success rounded-full"></div>
+                                    <span class="text-sm text-secondary-600">En ligne</span>
+                                </div>
+                            </div>
+
+                            <p class="text-secondary-600">
+                                Site vitrine professionnel avec système de réservation, blog intégré et optimisation SEO pour cabinet de conseil français.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">WordPress</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">PHP</span>
+                                <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">SEO</span>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-secondary-200">
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-primary">1.8s</div>
+                                    <div class="text-xs text-secondary-500">Temps de chargement</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-accent">95</div>
+                                    <div class="text-xs text-secondary-500">Score SEO</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-success">100%</div>
+                                    <div class="text-xs text-secondary-500">Accessibilité</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Startup Dashboard -->
+                <div class="project-card group" data-tech="vue,laravel" data-industry="startup" data-complexity="complex">
+                    <div class="card group-hover:shadow-elevated transition-smooth cursor-pointer" onclick="openProjectModal('project3')">
+                        <div class="relative mb-6 overflow-hidden rounded-lg">
+                            <img src="https://images.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Dashboard startup" class="w-full h-48 object-cover group-hover:scale-105 transition-smooth" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            
+                            <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">
+                                -60% Temps de traitement
+                            </div>
+                            
+                            <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-smooth">
+                                <button class="bg-white/90 backdrop-blur-soft text-secondary-900 p-2 rounded-full hover:bg-white transition-quick">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-inter font-semibold text-xl text-secondary-900">DataFlow Dashboard</h3>
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                    <span class="text-sm text-secondary-600">En développement</span>
+                                </div>
+                            </div>
+
+                            <p class="text-secondary-600">
+                                Dashboard analytique en temps réel avec visualisations interactives, API REST et système d'authentification avancé.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Vue.js</span>
+                                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">Laravel</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">PostgreSQL</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Redis</span>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-secondary-200">
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-primary">0.9s</div>
+                                    <div class="text-xs text-secondary-500">Temps de réponse API</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-accent">10K+</div>
+                                    <div class="text-xs text-secondary-500">Requêtes/min</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-success">99.9%</div>
+                                    <div class="text-xs text-secondary-500">Uptime</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Restaurant Website -->
+                <div class="project-card group" data-tech="wordpress" data-industry="restaurant" data-complexity="simple">
+                    <div class="card group-hover:shadow-elevated transition-smooth cursor-pointer" onclick="openProjectModal('project4')">
+                        <div class="relative mb-6 overflow-hidden rounded-lg">
+                            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Site restaurant" class="w-full h-48 object-cover group-hover:scale-105 transition-smooth" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            
+                            <div class="absolute top-4 left-4 bg-success text-white px-3 py-1 rounded-full text-sm font-medium">
+                                +80% Réservations
+                            </div>
+                            
+                            <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-smooth">
+                                <button class="bg-white/90 backdrop-blur-soft text-secondary-900 p-2 rounded-full hover:bg-white transition-quick">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-inter font-semibold text-xl text-secondary-900">Le Jardin Casablanca</h3>
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-3 h-3 bg-success rounded-full"></div>
+                                    <span class="text-sm text-secondary-600">En ligne</span>
+                                </div>
+                            </div>
+
+                            <p class="text-secondary-600">
+                                Site vitrine élégant avec menu interactif, système de réservation en ligne et galerie photo pour restaurant gastronomique.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">WordPress</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">OpenTable</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Custom CSS</span>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-secondary-200">
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-primary">1.5s</div>
+                                    <div class="text-xs text-secondary-500">Temps de chargement</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-accent">92</div>
+                                    <div class="text-xs text-secondary-500">Score PageSpeed</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-success">100%</div>
+                                    <div class="text-xs text-secondary-500">Mobile-friendly</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Educational Platform -->
+                <div class="project-card group" data-tech="react,nodejs" data-industry="education" data-complexity="complex">
+                    <div class="card group-hover:shadow-elevated transition-smooth cursor-pointer" onclick="openProjectModal('project5')">
+                        <div class="relative mb-6 overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Plateforme éducative" class="w-full h-48 object-cover group-hover:scale-105 transition-smooth" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            
+                            <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
+                                +300% Engagement
+                            </div>
+                            
+                            <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-smooth">
+                                <button class="bg-white/90 backdrop-blur-soft text-secondary-900 p-2 rounded-full hover:bg-white transition-quick">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-inter font-semibold text-xl text-secondary-900">EduMorocco Platform</h3>
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-3 h-3 bg-success rounded-full"></div>
+                                    <span class="text-sm text-secondary-600">En ligne</span>
+                                </div>
+                            </div>
+
+                            <p class="text-secondary-600">
+                                Plateforme d'apprentissage en ligne avec cours vidéo, quiz interactifs et suivi de progression pour étudiants marocains.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">React</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">MongoDB</span>
+                                <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Socket.io</span>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-secondary-200">
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-primary">1.2s</div>
+                                    <div class="text-xs text-secondary-500">Temps de chargement</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-accent">5K+</div>
+                                    <div class="text-xs text-secondary-500">Utilisateurs actifs</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-success">96%</div>
+                                    <div class="text-xs text-secondary-500">Taux de satisfaction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Healthcare App -->
+                <div class="project-card group" data-tech="react,nodejs" data-industry="healthcare" data-complexity="complex">
+                    <div class="card group-hover:shadow-elevated transition-smooth cursor-pointer" onclick="openProjectModal('project6')">
+                        <div class="relative mb-6 overflow-hidden rounded-lg">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Application santé" class="w-full h-48 object-cover group-hover:scale-105 transition-smooth" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            
+                            <div class="absolute top-4 left-4 bg-success text-white px-3 py-1 rounded-full text-sm font-medium">
+                                -40% Temps d'attente
+                            </div>
+                            
+                            <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-smooth">
+                                <button class="bg-white/90 backdrop-blur-soft text-secondary-900 p-2 rounded-full hover:bg-white transition-quick">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-inter font-semibold text-xl text-secondary-900">MediConnect Maroc</h3>
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-3 h-3 bg-success rounded-full"></div>
+                                    <span class="text-sm text-secondary-600">En ligne</span>
+                                </div>
+                            </div>
+
+                            <p class="text-secondary-600">
+                                Application de gestion médicale avec prise de rendez-vous, dossiers patients et téléconsultation pour cliniques marocaines.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">React</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+                                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">PostgreSQL</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">WebRTC</span>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-secondary-200">
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-primary">1.1s</div>
+                                    <div class="text-xs text-secondary-500">Temps de chargement</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-accent">2K+</div>
+                                    <div class="text-xs text-secondary-500">Patients/mois</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-inter font-bold text-success">99.5%</div>
+                                    <div class="text-xs text-secondary-500">Disponibilité</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="btn-secondary" id="load-more-btn">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                    </svg>
+                    Charger Plus de Projets
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Moroccan Market Expertise Section -->
+    <section class="section-padding bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-secondary-900 mb-4">Expertise Marché Marocain</h2>
+                <p class="text-lg text-secondary-600 max-w-2xl mx-auto">
+                    Solutions spécialisées pour les besoins uniques du marché marocain et nord-africain
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Payment Integration -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-xl text-secondary-900 mb-3">Paiements Locaux</h3>
+                    <p class="text-secondary-600 mb-4">
+                        Intégration CMI, Maroc Telecommerce, et solutions de paiement mobile adaptées au marché marocain.
+                    </p>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm">CMI</span>
+                        <span class="bg-accent-100 text-accent-800 px-3 py-1 rounded-full text-sm">Maroc Telecommerce</span>
+                        <span class="bg-success-100 text-success-800 px-3 py-1 rounded-full text-sm">Cash Plus</span>
+                    </div>
+                </div>
+
+                <!-- Multilingual Support -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-xl text-secondary-900 mb-3">Support Multilingue</h3>
+                    <p class="text-secondary-600 mb-4">
+                        Développement avec support natif pour l'arabe, le français et l'anglais avec RTL/LTR automatique.
+                    </p>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm">العربية</span>
+                        <span class="bg-accent-100 text-accent-800 px-3 py-1 rounded-full text-sm">Français</span>
+                        <span class="bg-success-100 text-success-800 px-3 py-1 rounded-full text-sm">English</span>
+                    </div>
+                </div>
+
+                <!-- Cultural Design -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-success text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-xl text-secondary-900 mb-3">Design Culturel</h3>
+                    <p class="text-secondary-600 mb-4">
+                        Interfaces adaptées aux préférences culturelles marocaines avec couleurs, typographies et motifs locaux.
+                    </p>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm">Motifs Traditionnels</span>
+                        <span class="bg-accent-100 text-accent-800 px-3 py-1 rounded-full text-sm">Couleurs Locales</span>
+                        <span class="bg-success-100 text-success-800 px-3 py-1 rounded-full text-sm">UX Culturelle</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Comparison Tool -->
+    <section class="section-padding bg-white">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-secondary-900 mb-4">Avant / Après</h2>
+                <p class="text-lg text-secondary-600 max-w-2xl mx-auto">
+                    Découvrez les améliorations concrètes apportées aux projets de mes clients
+                </p>
+            </div>
+
+            <div class="bg-surface rounded-lg p-8 shadow-soft">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Before -->
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-8 h-8 bg-error text-white rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-inter font-semibold text-xl text-secondary-900">Avant</h3>
+                        </div>
+                        
+                        <div class="relative overflow-hidden rounded-lg">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Site web avant optimisation" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-secondary-600">Temps de chargement</span>
+                                <span class="text-error font-semibold">8.5s</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-secondary-600">Score PageSpeed</span>
+                                <span class="text-error font-semibold">32/100</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-secondary-600">Taux de conversion</span>
+                                <span class="text-error font-semibold">1.2%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-secondary-600">Taux de rebond</span>
+                                <span class="text-error font-semibold">78%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- After -->
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-8 h-8 bg-success text-white rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-inter font-semibold text-xl text-secondary-900">Après</h3>
+                        </div>
+                        
+                        <div class="relative overflow-hidden rounded-lg">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Site web après optimisation" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-secondary-600">Temps de chargement</span>
+                                <span class="text-success font-semibold">1.8s</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-secondary-600">Score PageSpeed</span>
+                                <span class="text-success font-semibold">94/100</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-secondary-600">Taux de conversion</span>
+                                <span class="text-success font-semibold">4.2%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-secondary-600">Taux de rebond</span>
+                                <span class="text-success font-semibold">35%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Improvement Summary -->
+                <div class="mt-8 pt-8 border-t border-secondary-200">
+                    <h4 class="font-inter font-semibold text-lg text-secondary-900 mb-4">Améliorations Clés</h4>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-inter font-bold text-success mb-1">-79%</div>
+                            <div class="text-sm text-secondary-600">Temps de chargement</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-inter font-bold text-success mb-1">+194%</div>
+                            <div class="text-sm text-secondary-600">Score PageSpeed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-inter font-bold text-success mb-1">+250%</div>
+                            <div class="text-sm text-secondary-600">Taux de conversion</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-inter font-bold text-success mb-1">-55%</div>
+                            <div class="text-sm text-secondary-600">Taux de rebond</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient-to-r from-primary to-primary-700 text-white">
+        <div class="container-max text-center">
+            <h2 class="text-3xl lg:text-4xl font-inter font-bold mb-6">
+                Prêt à Créer Votre Prochain Projet ?
+            </h2>
+            <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                Transformons ensemble votre vision en une solution web performante qui génère des résultats concrets.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_collaboration_hub.html" class="bg-white text-primary px-8 py-4 rounded-lg font-inter font-semibold hover:bg-primary-50 transition-smooth inline-flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
+                    Discuter de Mon Projet
+                </a>
+                <a href="case_studies_deep_project_analysis.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-inter font-semibold hover:bg-white hover:text-primary transition-smooth inline-flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    Voir les Études de Cas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white section-padding">
+        <div class="container-max">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-inter font-bold text-lg">A</span>
+                        </div>
+                        <span class="font-inter font-semibold text-xl">Anass</span>
+                    </div>
+                    <p class="text-secondary-400">
+                        Développeur Full-Stack passionné, créateur de solutions web innovantes pour entreprises marocaines et internationales.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h3 class="font-inter font-semibold text-lg mb-4">Navigation</h3>
+                    <div class="space-y-2">
+                        <a href="homepage_developer_portfolio_hub.html" class="block text-secondary-400 hover:text-white transition-quick">Accueil</a>
+                        <a href="portfolio_showcase_interactive_project_gallery.html" class="block text-secondary-400 hover:text-white transition-quick">Portfolio</a>
+                        <a href="about_professional_story.html" class="block text-secondary-400 hover:text-white transition-quick">À Propos</a>
+                        <a href="services_transparent_pricing.html" class="block text-secondary-400 hover:text-white transition-quick">Services</a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-inter font-semibold text-lg mb-4">Services</h3>
+                    <div class="space-y-2">
+                        <div class="text-secondary-400">Développement Web</div>
+                        <div class="text-secondary-400">Applications React</div>
+                        <div class="text-secondary-400">API Node.js</div>
+                        <div class="text-secondary-400">E-commerce</div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-inter font-semibold text-lg mb-4">Contact</h3>
+                    <div class="space-y-2">
+                        <div class="text-secondary-400">Casablanca, Maroc</div>
+                        <a href="mailto:anass@portfolio.ma" class="block text-secondary-400 hover:text-white transition-quick">anass@portfolio.ma</a>
+                        <a href="https://wa.me/212600000000" class="block text-secondary-400 hover:text-white transition-quick">+212 6 00 00 00 00</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-secondary-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-secondary-400 text-sm">
+                    © 2025 Anass Portfolio Pro. Tous droits réservés.
+                </div>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="https://github.com/anass" class="text-secondary-400 hover:text-white transition-quick">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/anass" class="text-secondary-400 hover:text-white transition-quick">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/anass" class="text-secondary-400 hover:text-white transition-quick">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-soft" onclick="closeProjectModal()"></div>
+        <div class="relative z-10 flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="p-6">
+                    <!-- Modal Header -->
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-2xl font-inter font-bold text-secondary-900" id="modal-title">Titre du Projet</h3>
+                        <button onclick="closeProjectModal()" class="text-secondary-400 hover:text-secondary-600 transition-quick">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Modal Content -->
+                    <div id="modal-content">
+                        <!-- Content will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Portfolio filtering functionality
+        const searchInput = document.getElementById('search-input');
+        const techFilter = document.getElementById('tech-filter');
+        const industryFilter = document.getElementById('industry-filter');
+        const complexityFilter = document.getElementById('complexity-filter');
+        const resetButton = document.getElementById('reset-filters');
+        const portfolioGrid = document.getElementById('portfolio-grid');
+        const activeFilters = document.getElementById('active-filters');
+
+        function filterProjects() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const techValue = techFilter.value;
+            const industryValue = industryFilter.value;
+            const complexityValue = complexityFilter.value;
+
+            const projectCards = portfolioGrid.querySelectorAll('.project-card');
+
+            projectCards.forEach(card => {
+                const techData = card.dataset.tech || '';
+                const industryData = card.dataset.industry || '';
+                const complexityData = card.dataset.complexity || '';
+                const cardText = card.textContent.toLowerCase();
+
+                const matchesSearch = !searchTerm || cardText.includes(searchTerm);
+                const matchesTech = !techValue || techData.includes(techValue);
+                const matchesIndustry = !industryValue || industryData.includes(industryValue);
+                const matchesComplexity = !complexityValue || complexityData.includes(complexityValue);
+
+                if (matchesSearch && matchesTech && matchesIndustry && matchesComplexity) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            updateActiveFilters();
+        }
+
+        function updateActiveFilters() {
+            const filters = [];
+            
+            if (searchInput.value) filters.push({ type: 'search', value: searchInput.value });
+            if (techFilter.value) filters.push({ type: 'tech', value: techFilter.options[techFilter.selectedIndex].text });
+            if (industryFilter.value) filters.push({ type: 'industry', value: industryFilter.options[industryFilter.selectedIndex].text });
+            if (complexityFilter.value) filters.push({ type: 'complexity', value: complexityFilter.options[complexityFilter.selectedIndex].text });
+
+            activeFilters.innerHTML = '';
+            
+            filters.forEach(filter => {
+                const filterTag = document.createElement('span');
+                filterTag.className = 'inline-flex items-center bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm';
+                filterTag.innerHTML = `
+                    ${filter.value}
+                    <button onclick="removeFilter('${filter.type}')" class="ml-2 text-primary-600 hover:text-primary-800">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                `;
+                activeFilters.appendChild(filterTag);
+            });
+        }
+
+        function removeFilter(type) {
+            switch(type) {
+                case 'search':
+                    searchInput.value = '';
+                    break;
+                case 'tech':
+                    techFilter.value = '';
+                    break;
+                case 'industry':
+                    industryFilter.value = '';
+                    break;
+                case 'complexity':
+                    complexityFilter.value = '';
+                    break;
+            }
+            filterProjects();
+        }
+
+        function resetFilters() {
+            searchInput.value = '';
+            techFilter.value = '';
+            industryFilter.value = '';
+            complexityFilter.value = '';
+            filterProjects();
+        }
+
+        // Event listeners
+        searchInput.addEventListener('input', filterProjects);
+        techFilter.addEventListener('change', filterProjects);
+        industryFilter.addEventListener('change', filterProjects);
+        complexityFilter.addEventListener('change', filterProjects);
+        resetButton.addEventListener('click', resetFilters);
+
+        // Project modal functionality
+        function openProjectModal(projectId) {
+            const modal = document.getElementById('project-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalContent = document.getElementById('modal-content');
+
+            // Sample project data - in a real app, this would come from a database
+            const projectData = {
+                project1: {
+                    title: 'MarocShop - E-commerce',
+                    description: 'Plateforme e-commerce complète développée pour le marché marocain avec intégration des systèmes de paiement locaux.',
+                    challenge: 'Créer une solution e-commerce adaptée aux spécificités du marché marocain avec support multilingue et intégration des passerelles de paiement locales.',
+                    solution: 'Développement d\'une application React avec backend Node.js, intégration CMI et Maroc Telecommerce, support RTL pour l\'arabe.',
+                    results: ['Augmentation des ventes de 150%', 'Temps de chargement réduit à 2.1s', 'Taux de conversion de 4.2%'],
+                    tech: ['React', 'Node.js', 'MongoDB', 'Stripe', 'CMI Integration'],
+                    github: 'https://github.com/anass/marocshop',
+                    live: 'https://marocshop.ma'
+                },
+                project2: {
+                    title: 'TechConseil France',
+                    description: 'Site vitrine professionnel pour cabinet de conseil français avec système de réservation intégré.',
+                    challenge: 'Créer une présence web professionnelle avec système de réservation et optimisation SEO pour un cabinet de conseil.',
+                    solution: 'Développement WordPress personnalisé avec thème sur mesure, intégration système de réservation et optimisation SEO avancée.',
+                    results: ['Augmentation des leads de 200%', 'Score SEO de 95/100', 'Accessibilité 100%'],
+                    tech: ['WordPress', 'PHP', 'MySQL', 'SEO', 'Custom Theme'],
+                    github: null,
+                    live: 'https://techconseil.fr'
+                }
+            };
+
+            const project = projectData[projectId];
+            if (!project) return;
+
+            modalTitle.textContent = project.title;
+            modalContent.innerHTML = `
+                <div class="space-y-6">
+                    <p class="text-lg text-secondary-600">${project.description}</p>
+                    
+                    <div>
+                        <h4 class="font-inter font-semibold text-lg text-secondary-900 mb-3">Défi</h4>
+                        <p class="text-secondary-600">${project.challenge}</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-inter font-semibold text-lg text-secondary-900 mb-3">Solution</h4>
+                        <p class="text-secondary-600">${project.solution}</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-inter font-semibold text-lg text-secondary-900 mb-3">Résultats</h4>
+                        <ul class="space-y-2">
+                            ${project.results.map(result => `<li class="flex items-center text-secondary-600"><svg class="w-5 h-5 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>${result}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-inter font-semibold text-lg text-secondary-900 mb-3">Technologies</h4>
+                        <div class="flex flex-wrap gap-2">
+                            ${project.tech.map(tech => `<span class="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm">${tech}</span>`).join('')}
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4 pt-4">
+                        ${project.live ? `<a href="${project.live}" target="_blank" class="btn-primary">Voir le Site</a>` : ''}
+                        ${project.github ? `<a href="${project.github}" target="_blank" class="btn-secondary">Code Source</a>` : ''}
+                    </div>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('project-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Load more functionality
+        document.getElementById('load-more-btn').addEventListener('click', function() {
+            // In a real app, this would load more projects from the server
+            this.textContent = 'Tous les projets affichés';
+            this.disabled = true;
+            this.classList.add('opacity-50', 'cursor-not-allowed');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-elevated');
+            } else {
+                header.classList.remove('shadow-elevated');
+            }
+        });
+    </script>
+</body>
+</html>

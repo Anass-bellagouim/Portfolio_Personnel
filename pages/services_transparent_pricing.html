@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services & Tarifs Transparents | Anass - Développeur Full-Stack</title>
+    <meta name="description" content="Services de développement web professionnels avec tarifs transparents en MAD et EUR. Solutions sur mesure pour entreprises marocaines et internationales." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fanassport7208back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-soft border-b border-secondary-200">
+        <nav class="container-max flex items-center justify-between py-4">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                    <span class="text-white font-inter font-bold text-lg">A</span>
+                </div>
+                <span class="font-inter font-semibold text-xl text-secondary-900">Anass</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="homepage_developer_portfolio_hub.html" class="text-secondary-600 hover:text-primary transition-quick">Accueil</a>
+                <a href="portfolio_showcase_interactive_project_gallery.html" class="text-secondary-600 hover:text-primary transition-quick">Portfolio</a>
+                <a href="about_professional_story.html" class="text-secondary-600 hover:text-primary transition-quick">À Propos</a>
+                <a href="services_transparent_pricing.html" class="text-primary font-medium hover:text-accent transition-quick">Services</a>
+                <a href="case_studies_deep_project_analysis.html" class="text-secondary-600 hover:text-primary transition-quick">Études de Cas</a>
+                <a href="contact_collaboration_hub.html" class="text-secondary-600 hover:text-primary transition-quick">Contact</a>
+            </div>
+
+            <!-- Language Toggle & CTA -->
+            <div class="flex items-center space-x-4">
+                <div class="hidden sm:flex items-center bg-surface rounded-lg p-1">
+                    <button class="px-3 py-1 bg-primary text-white rounded-md text-sm font-medium">FR</button>
+                    <button class="px-3 py-1 text-secondary-600 rounded-md text-sm font-medium hover:text-primary transition-quick">EN</button>
+                </div>
+                <a href="contact_collaboration_hub.html" class="btn-primary">Démarrer un Projet</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden p-2" id="mobile-menu-btn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t border-secondary-200" id="mobile-menu">
+            <div class="px-4 py-4 space-y-4">
+                <a href="homepage_developer_portfolio_hub.html" class="block text-secondary-600 hover:text-primary transition-quick">Accueil</a>
+                <a href="portfolio_showcase_interactive_project_gallery.html" class="block text-secondary-600 hover:text-primary transition-quick">Portfolio</a>
+                <a href="about_professional_story.html" class="block text-secondary-600 hover:text-primary transition-quick">À Propos</a>
+                <a href="services_transparent_pricing.html" class="block text-primary font-medium">Services</a>
+                <a href="case_studies_deep_project_analysis.html" class="block text-secondary-600 hover:text-primary transition-quick">Études de Cas</a>
+                <a href="contact_collaboration_hub.html" class="block text-secondary-600 hover:text-primary transition-quick">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary-50 via-white to-accent-50">
+        <div class="container-max">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-4xl lg:text-5xl font-inter font-bold text-secondary-900 mb-6">
+                    Services & Tarifs 
+                    <span class="text-gradient">Transparents</span>
+                </h1>
+                <p class="text-xl text-secondary-600 mb-8 leading-relaxed">
+                    Solutions web professionnelles avec une tarification claire et honnête. 
+                    Qualité européenne, prix marocains compétitifs.
+                </p>
+                
+                <!-- Currency Toggle -->
+                <div class="flex items-center justify-center space-x-4 mb-8">
+                    <span class="text-secondary-600">Devise :</span>
+                    <div class="flex items-center bg-surface rounded-lg p-1">
+                        <button class="currency-toggle px-4 py-2 bg-primary text-white rounded-md text-sm font-medium" data-currency="mad">MAD</button>
+                        <button class="currency-toggle px-4 py-2 text-secondary-600 rounded-md text-sm font-medium hover:text-primary transition-quick" data-currency="eur">EUR</button>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                    <div class="text-center">
+                        <div class="text-3xl font-inter font-bold text-primary mb-2">50+</div>
+                        <div class="text-sm text-secondary-600">Projets Livrés</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-inter font-bold text-accent mb-2">98%</div>
+                        <div class="text-sm text-secondary-600">Satisfaction Client</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-inter font-bold text-success mb-2">7j</div>
+                        <div class="text-sm text-secondary-600">Délai Moyen</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-inter font-bold text-secondary-900 mb-2">24/7</div>
+                        <div class="text-sm text-secondary-600">Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services -->
+    <section class="section-padding bg-white">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-inter font-bold text-secondary-900 mb-4">Services Principaux</h2>
+                <p class="text-lg text-secondary-600 max-w-2xl mx-auto">
+                    Solutions complètes pour tous vos besoins de développement web
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Custom Website Development -->
+                <div class="card group hover:shadow-elevated transition-smooth">
+                    <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-200 transition-smooth">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-secondary-900 mb-4">Développement de Sites Web</h3>
+                    <p class="text-secondary-600 mb-6">
+                        Sites vitrine, portfolios et sites d'entreprise sur mesure avec design moderne et responsive.
+                    </p>
+                    
+                    <!-- Features -->
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-sm text-secondary-700">
+                            <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Design responsive mobile-first
+                        </li>
+                        <li class="flex items-center text-sm text-secondary-700">
+                            <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Optimisation SEO incluse
+                        </li>
+                        <li class="flex items-center text-sm text-secondary-700">
+                            <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Système de gestion de contenu
+                        </li>
+                        <li class="flex items-center text-sm text-secondary-700">
+                            <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Formation utilisateur incluse
+                        </li>
+                    </ul>
+
+                    <div class="border-t border-secondary-200 pt-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-secondary-600">À partir de</span>
+                            <div class="text-right">
+                                <div class="price-mad text-2xl font-inter font-bold text-primary">8 000 MAD</div>
+                                <div class="price-eur hidden text-2xl font-inter font-bold text-primary">800 EUR</div>
+                                <div class="text-sm text-secondary-500">Délai : 5-10 jours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-commerce Development -->
+                <div class="card group hover:shadow-elevated transition-smooth">
+                    <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-accent-200 transition-smooth">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-secondary-900 mb-4">E-commerce & Boutiques</h3>
+                    <p class="text-secondary-600 mb-6">
+                        Boutiques en ligne complètes avec gestion des produits, paiements et commandes.
+                    </p>
+                    
+                    <!-- Features -->
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-sm text-secondary-700">
+                            <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Catalogue produits avancé
+                        </li>
+                        <li class="flex items-center text-sm text-secondary-700">
+                            <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Paiements sécurisés (CMI, PayPal)
+                        </li>
+                        <li class="flex items-center text-sm text-secondary-700">
+                            <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Gestion des stocks
+                        </li>
+                        <li class="flex items-center text-sm text-secondary-700">
+                            <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Tableau de bord admin
+                        </li>
+                    </ul>
+
+                    <div class="border-t border-secondary-200 pt-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-secondary-600">À partir de</span>
+                            <div class="text-right">
+                                <div class="price-mad text-2xl font-inter font-bold text-accent">15 000 MAD</div>
+                                <div class="price-eur hidden text-2xl font-inter font-bold text-accent">1 500 EUR</div>
+                                <div class="text-sm text-secondary-500">Délai : 10-20 jours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Applications -->
+                <div class="card group hover:shadow-elevated transition-smooth">
+                    <div class="w-16 h-16 bg-success-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-success-200 transition-smooth">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-secondary-900 mb-4">Applications Web</h3>
+                    <p class="text-secondary-600 mb-6">
+                        Applications métier sur mesure, dashboards et systèmes de gestion personnalisés.
+                    </p>
+                    
+                    <!-- Features -->
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-sm text-secondary-700">
+                            <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Interface utilisateur moderne
+                        </li>
+                        <li class="flex items-center text-sm text-secondary-700">
+                            <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Base de données sécurisée
+                        </li>
+                        <li class="flex items-center text-sm text-secondary-700">
+                            <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            API REST personnalisée
+                        </li>
+                        <li class="flex items-center text-sm text-secondary-700">
+                            <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Authentification multi-niveaux
+                        </li>
+                    </ul>
+
+                    <div class="border-t border-secondary-200 pt-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-secondary-600">À partir de</span>
+                            <div class="text-right">
+                                <div class="price-mad text-2xl font-inter font-bold text-success">25 000 MAD</div>
+                                <div class="price-eur hidden text-2xl font-inter font-bold text-success">2 500 EUR</div>
+                                <div class="text-sm text-secondary-500">Délai : 15-30 jours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Moroccan Business Specialists -->
+    <section class="section-padding bg-gradient-to-br from-accent-50 to-primary-50">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-secondary-900 mb-4">Spécialiste Entreprises Marocaines</h2>
+                <p class="text-lg text-secondary-600 max-w-2xl mx-auto">
+                    Solutions adaptées aux spécificités du marché marocain et MENA
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Localization -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-xl text-secondary-900 mb-3">Localisation AR/FR</h3>
+                    <p class="text-secondary-600">
+                        Support complet des langues arabe et française avec adaptation culturelle.
+                    </p>
+                </div>
+
+                <!-- Payment Gateways -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-xl text-secondary-900 mb-3">Paiements Locaux</h3>
+                    <p class="text-secondary-600">
+                        Intégration CMI, Maroc Telecommerce et solutions de paiement marocaines.
+                    </p>
+                </div>
+
+                <!-- Mobile First -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-success text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-xl text-secondary-900 mb-3">Mobile-First</h3>
+                    <p class="text-secondary-600">
+                        Optimisation pour l'usage mobile élevé au Maroc (80%+ du trafic).
+                    </p>
+                </div>
+
+                <!-- Local SEO -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-warning text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-xl text-secondary-900 mb-3">SEO Maroc</h3>
+                    <p class="text-secondary-600">
+                        Optimisation pour les moteurs de recherche et habitudes locales.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Packages -->
+    <section class="section-padding bg-white">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-inter font-bold text-secondary-900 mb-4">Forfaits Transparents</h2>
+                <p class="text-lg text-secondary-600 max-w-2xl mx-auto">
+                    Choisissez le forfait adapté à la taille et aux besoins de votre entreprise
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Startup Package -->
+                <div class="card relative">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-inter font-bold text-secondary-900 mb-2">Forfait Startup</h3>
+                        <p class="text-secondary-600 mb-4">Parfait pour les nouvelles entreprises</p>
+                        <div class="price-mad">
+                            <div class="text-4xl font-inter font-bold text-primary mb-2">12 000 MAD</div>
+                            <div class="text-sm text-secondary-500">Projet complet</div>
+                        </div>
+                        <div class="price-eur hidden">
+                            <div class="text-4xl font-inter font-bold text-primary mb-2">1 200 EUR</div>
+                            <div class="text-sm text-secondary-500">Projet complet</div>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Site vitrine jusqu'à 5 pages</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Design responsive mobile-first</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Optimisation SEO de base</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Formulaire de contact</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">2 révisions incluses</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Support 30 jours</span>
+                        </li>
+                    </ul>
+
+                    <a href="contact_collaboration_hub.html" class="btn-primary w-full text-center">Choisir ce Forfait</a>
+                </div>
+
+                <!-- Growth Package -->
+                <div class="card relative border-2 border-primary">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium">Plus Populaire</span>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-inter font-bold text-secondary-900 mb-2">Forfait Croissance</h3>
+                        <p class="text-secondary-600 mb-4">Idéal pour les entreprises en développement</p>
+                        <div class="price-mad">
+                            <div class="text-4xl font-inter font-bold text-primary mb-2">25 000 MAD</div>
+                            <div class="text-sm text-secondary-500">Projet complet</div>
+                        </div>
+                        <div class="price-eur hidden">
+                            <div class="text-4xl font-inter font-bold text-primary mb-2">2 500 EUR</div>
+                            <div class="text-sm text-secondary-500">Projet complet</div>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Site e-commerce jusqu'à 50 produits</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Paiements en ligne (CMI/PayPal)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Gestion des stocks et commandes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Tableau de bord administrateur</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">SEO avancé + Analytics</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">4 révisions incluses</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Support 60 jours + formation</span>
+                        </li>
+                    </ul>
+
+                    <a href="contact_collaboration_hub.html" class="btn-primary w-full text-center">Choisir ce Forfait</a>
+                </div>
+
+                <!-- Enterprise Package -->
+                <div class="card relative">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-inter font-bold text-secondary-900 mb-2">Forfait Entreprise</h3>
+                        <p class="text-secondary-600 mb-4">Solutions sur mesure pour grandes entreprises</p>
+                        <div class="price-mad">
+                            <div class="text-4xl font-inter font-bold text-primary mb-2">Sur Devis</div>
+                            <div class="text-sm text-secondary-500">À partir de 50 000 MAD</div>
+                        </div>
+                        <div class="price-eur hidden">
+                            <div class="text-4xl font-inter font-bold text-primary mb-2">Sur Devis</div>
+                            <div class="text-sm text-secondary-500">À partir de 5 000 EUR</div>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Application web sur mesure</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Architecture évolutive</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">API et intégrations tierces</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Sécurité renforcée</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Tests automatisés</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Révisions illimitées</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-success mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-secondary-700">Support prioritaire 24/7</span>
+                        </li>
+                    </ul>
+
+                    <a href="contact_collaboration_hub.html" class="btn-primary w-full text-center">Demander un Devis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-on Services -->
+    <section class="section-padding bg-surface">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-secondary-900 mb-4">Services Complémentaires</h2>
+                <p class="text-lg text-secondary-600 max-w-2xl mx-auto">
+                    Étendez votre projet avec nos services additionnels
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Hosting Setup -->
+                <div class="card text-center">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-secondary-900 mb-2">Hébergement & Domaine</h3>
+                    <p class="text-sm text-secondary-600 mb-4">Configuration complète de l'hébergement et du nom de domaine</p>
+                    <div class="price-mad text-lg font-inter font-bold text-primary">1 500 MAD</div>
+                    <div class="price-eur hidden text-lg font-inter font-bold text-primary">150 EUR</div>
+                </div>
+
+                <!-- Content Creation -->
+                <div class="card text-center">
+                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-secondary-900 mb-2">Création de Contenu</h3>
+                    <p class="text-sm text-secondary-600 mb-4">Rédaction de textes et optimisation SEO du contenu</p>
+                    <div class="price-mad text-lg font-inter font-bold text-accent">2 000 MAD</div>
+                    <div class="price-eur hidden text-lg font-inter font-bold text-accent">200 EUR</div>
+                </div>
+
+                <!-- Training -->
+                <div class="card text-center">
+                    <div class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-secondary-900 mb-2">Formation Utilisateur</h3>
+                    <p class="text-sm text-secondary-600 mb-4">Sessions de formation pour gérer votre site web</p>
+                    <div class="price-mad text-lg font-inter font-bold text-success">1 000 MAD</div>
+                    <div class="price-eur hidden text-lg font-inter font-bold text-success">100 EUR</div>
+                </div>
+
+                <!-- Maintenance -->
+                <div class="card text-center">
+                    <div class="w-12 h-12 bg-warning-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-secondary-900 mb-2">Maintenance Mensuelle</h3>
+                    <p class="text-sm text-secondary-600 mb-4">Mises à jour, sauvegardes et support technique</p>
+                    <div class="price-mad text-lg font-inter font-bold text-warning">800 MAD/mois</div>
+                    <div class="price-eur hidden text-lg font-inter font-bold text-warning">80 EUR/mois</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Calculator -->
+    <section class="section-padding bg-white">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-secondary-900 mb-4">Calculateur d'Investissement</h2>
+                <p class="text-lg text-secondary-600 max-w-2xl mx-auto">
+                    Estimez le coût de votre projet en fonction de vos besoins spécifiques
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Calculator Form -->
+                    <div class="card">
+                        <h3 class="text-xl font-inter font-semibold text-secondary-900 mb-6">Configurez Votre Projet</h3>
+                        
+                        <div class="space-y-6">
+                            <!-- Project Type -->
+                            <div>
+                                <label class="block text-sm font-medium text-secondary-700 mb-3">Type de Projet</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center">
+                                        <input type="radio" name="project-type" value="website" class="text-primary focus:ring-primary" checked />
+                                        <span class="ml-3 text-secondary-700">Site Vitrine</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="project-type" value="ecommerce" class="text-primary focus:ring-primary" />
+                                        <span class="ml-3 text-secondary-700">E-commerce</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="project-type" value="webapp" class="text-primary focus:ring-primary" />
+                                        <span class="ml-3 text-secondary-700">Application Web</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Number of Pages -->
+                            <div>
+                                <label class="block text-sm font-medium text-secondary-700 mb-2">Nombre de Pages</label>
+                                <select class="input-field" id="pages-count">
+                                    <option value="5">1-5 pages</option>
+                                    <option value="10">6-10 pages</option>
+                                    <option value="20">11-20 pages</option>
+                                    <option value="50">20+ pages</option>
+                                </select>
+                            </div>
+
+                            <!-- Features -->
+                            <div>
+                                <label class="block text-sm font-medium text-secondary-700 mb-3">Fonctionnalités Souhaitées</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="text-primary focus:ring-primary" data-price="2000" />
+                                        <span class="ml-3 text-secondary-700">Système de réservation</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="text-primary focus:ring-primary" data-price="3000" />
+                                        <span class="ml-3 text-secondary-700">Paiement en ligne</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="text-primary focus:ring-primary" data-price="1500" />
+                                        <span class="ml-3 text-secondary-700">Multilingue (AR/FR/EN)</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="text-primary focus:ring-primary" data-price="2500" />
+                                        <span class="ml-3 text-secondary-700">Espace membre</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="text-primary focus:ring-primary" data-price="1000" />
+                                        <span class="ml-3 text-secondary-700">Blog intégré</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Timeline -->
+                            <div>
+                                <label class="block text-sm font-medium text-secondary-700 mb-2">Délai Souhaité</label>
+                                <select class="input-field" id="timeline">
+                                    <option value="1">Urgent (1-2 semaines) +30%</option>
+                                    <option value="0" selected>Standard (2-4 semaines)</option>
+                                    <option value="-0.1">Flexible (4+ semaines) -10%</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Estimate Result -->
+                    <div class="card bg-gradient-to-br from-primary-50 to-accent-50">
+                        <h3 class="text-xl font-inter font-semibold text-secondary-900 mb-6">Estimation de Votre Projet</h3>
+                        
+                        <div class="space-y-6">
+                            <!-- Base Price -->
+                            <div class="flex justify-between items-center">
+                                <span class="text-secondary-700">Prix de base :</span>
+                                <span class="font-semibold text-secondary-900" id="base-price-mad">12 000 MAD</span>
+                                <span class="font-semibold text-secondary-900 hidden" id="base-price-eur">1 200 EUR</span>
+                            </div>
+
+                            <!-- Features Price -->
+                            <div class="flex justify-between items-center">
+                                <span class="text-secondary-700">Fonctionnalités :</span>
+                                <span class="font-semibold text-secondary-900" id="features-price-mad">0 MAD</span>
+                                <span class="font-semibold text-secondary-900 hidden" id="features-price-eur">0 EUR</span>
+                            </div>
+
+                            <!-- Timeline Adjustment -->
+                            <div class="flex justify-between items-center">
+                                <span class="text-secondary-700">Ajustement délai :</span>
+                                <span class="font-semibold text-secondary-900" id="timeline-adjustment-mad">0 MAD</span>
+                                <span class="font-semibold text-secondary-900 hidden" id="timeline-adjustment-eur">0 EUR</span>
+                            </div>
+
+                            <hr class="border-secondary-200" />
+
+                            <!-- Total -->
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-semibold text-secondary-900">Total Estimé :</span>
+                                <div class="text-right">
+                                    <div class="text-2xl font-inter font-bold text-primary" id="total-price-mad">12 000 MAD</div>
+                                    <div class="text-2xl font-inter font-bold text-primary hidden" id="total-price-eur">1 200 EUR</div>
+                                </div>
+                            </div>
+
+                            <!-- Savings -->
+                            <div class="bg-success-50 border border-success-200 rounded-lg p-4">
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <div>
+                                        <div class="text-sm font-medium text-success-800">Économie vs Agence</div>
+                                        <div class="text-sm text-success-600" id="savings-mad">Vous économisez ~18 000 MAD</div>
+                                        <div class="text-sm text-success-600 hidden" id="savings-eur">Vous économisez ~1 800 EUR</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CTA -->
+                            <a href="contact_collaboration_hub.html" class="btn-primary w-full text-center">
+                                Demander un Devis Précis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Comparison -->
+    <section class="section-padding bg-surface">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-secondary-900 mb-4">Pourquoi Choisir un Freelancer ?</h2>
+                <p class="text-lg text-secondary-600 max-w-2xl mx-auto">
+                    Comparaison transparente avec les agences traditionnelles
+                </p>
+            </div>
+
+            <div class="max-w-5xl mx-auto">
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Freelancer (Anass) -->
+                    <div class="card border-2 border-primary">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-inter font-bold text-primary mb-2">Freelancer Expert</h3>
+                            <p class="text-secondary-600">Anass - Développeur Full-Stack</p>
+                        </div>
+
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Contact direct avec le développeur</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Tarifs transparents et compétitifs</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Flexibilité et réactivité</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Expertise locale + standards internationaux</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Support personnalisé 24/7</span>
+                            </li>
+                        </ul>
+
+                        <div class="text-center">
+                            <div class="price-mad text-2xl font-inter font-bold text-primary mb-2">12 000 - 50 000 MAD</div>
+                            <div class="price-eur hidden text-2xl font-inter font-bold text-primary mb-2">1 200 - 5 000 EUR</div>
+                            <div class="text-sm text-secondary-500">Selon complexité</div>
+                        </div>
+                    </div>
+
+                    <!-- Small Agency -->
+                    <div class="card">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-secondary-400 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-inter font-bold text-secondary-700 mb-2">Petite Agence</h3>
+                            <p class="text-secondary-600">3-10 employés</p>
+                        </div>
+
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-warning mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Intermédiaires multiples</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-warning mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Coûts de structure élevés</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Équipe dédiée</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-warning mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Délais plus longs</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-warning mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Support standardisé</span>
+                            </li>
+                        </ul>
+
+                        <div class="text-center">
+                            <div class="price-mad text-2xl font-inter font-bold text-secondary-700 mb-2">20 000 - 80 000 MAD</div>
+                            <div class="price-eur hidden text-2xl font-inter font-bold text-secondary-700 mb-2">2 000 - 8 000 EUR</div>
+                            <div class="text-sm text-secondary-500">Marges importantes</div>
+                        </div>
+                    </div>
+
+                    <!-- Large Agency -->
+                    <div class="card">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-secondary-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-inter font-bold text-secondary-700 mb-2">Grande Agence</h3>
+                            <p class="text-secondary-600">50+ employés</p>
+                        </div>
+
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-error mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Processus bureaucratiques</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-error mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Tarifs premium élevés</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Ressources importantes</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-error mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Communication complexe</span>
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-warning mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-secondary-700">Projets standardisés</span>
+                            </li>
+                        </ul>
+
+                        <div class="text-center">
+                            <div class="price-mad text-2xl font-inter font-bold text-secondary-700 mb-2">50 000 - 200 000 MAD</div>
+                            <div class="price-eur hidden text-2xl font-inter font-bold text-secondary-700 mb-2">5 000 - 20 000 EUR</div>
+                            <div class="text-sm text-secondary-500">Coûts de prestige</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Testimonials -->
+    <section class="section-padding bg-white">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-secondary-900 mb-4">Témoignages par Service</h2>
+                <p class="text-lg text-secondary-600 max-w-2xl mx-auto">
+                    Retours clients authentiques pour chaque type de service
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Website Development Testimonial -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="font-inter font-semibold text-secondary-900">Site Vitrine</div>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote class="text-secondary-700 mb-4 italic">
+                        "Notre site vitrine a dépassé toutes nos attentes. Design moderne, navigation intuitive et optimisation SEO parfaite. Nos leads ont augmenté de 200% !"
+                    </blockquote>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Karim Alaoui" class="w-10 h-10 rounded-full object-cover mr-3" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <div class="font-inter font-semibold text-secondary-900 text-sm">Karim Alaoui</div>
+                            <div class="text-xs text-secondary-600">Directeur, Consulting Pro</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-commerce Testimonial -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="font-inter font-semibold text-secondary-900">E-commerce</div>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote class="text-secondary-700 mb-4 italic">
+                        "Boutique en ligne exceptionnelle ! Intégration CMI parfaite, gestion des stocks intuitive. Nos ventes en ligne ont triplé en 3 mois."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fatima Zahra" class="w-10 h-10 rounded-full object-cover mr-3" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <div class="font-inter font-semibold text-secondary-900 text-sm">Fatima Zahra</div>
+                            <div class="text-xs text-secondary-600">Fondatrice, Artisanat Moderne</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Application Testimonial -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="font-inter font-semibold text-secondary-900">Application Web</div>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote class="text-secondary-700 mb-4 italic">
+                        "Application de gestion sur mesure qui a révolutionné notre workflow. Interface intuitive, performances excellentes. Un investissement rentabilisé en 6 mois."
+                    </blockquote>
+                    <div class="flex items-center">
+                        <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Omar Benali" class="w-10 h-10 rounded-full object-cover mr-3" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div>
+                            <div class="font-inter font-semibold text-secondary-900 text-sm">Omar Benali</div>
+                            <div class="text-xs text-secondary-600">CEO, LogiTech Solutions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient-to-r from-primary to-primary-700 text-white">
+        <div class="container-max text-center">
+            <h2 class="text-3xl lg:text-4xl font-inter font-bold mb-6">
+                Prêt à Démarrer Votre Projet ?
+            </h2>
+            <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                Discutons de vos besoins et recevez un devis personnalisé sous 24h. 
+                Consultation gratuite et sans engagement.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_collaboration_hub.html" class="bg-white text-primary px-8 py-4 rounded-lg font-inter font-semibold hover:bg-primary-50 transition-smooth inline-flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
+                    Demander un Devis Gratuit
+                </a>
+                <a href="portfolio_showcase_interactive_project_gallery.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-inter font-semibold hover:bg-white hover:text-primary transition-smooth inline-flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    </svg>
+                    Voir Mes Réalisations
+                </a>
+            </div>
+
+            <!-- Quick Contact Info -->
+            <div class="mt-12 pt-8 border-t border-primary-600">
+                <p class="text-primary-200 mb-4">Besoin d'une réponse immédiate ?</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="mailto:anass@portfolio.ma" class="text-white hover:text-primary-200 transition-quick flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        anass@portfolio.ma
+                    </a>
+                    <a href="https://wa.me/212600000000" class="text-white hover:text-primary-200 transition-quick flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                        +212 6 00 00 00 00
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white section-padding">
+        <div class="container-max">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-inter font-bold text-lg">A</span>
+                        </div>
+                        <span class="font-inter font-semibold text-xl">Anass</span>
+                    </div>
+                    <p class="text-secondary-400">
+                        Développeur Full-Stack passionné, créateur de solutions web innovantes pour entreprises marocaines et internationales.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h3 class="font-inter font-semibold text-lg mb-4">Navigation</h3>
+                    <div class="space-y-2">
+                        <a href="homepage_developer_portfolio_hub.html" class="block text-secondary-400 hover:text-white transition-quick">Accueil</a>
+                        <a href="portfolio_showcase_interactive_project_gallery.html" class="block text-secondary-400 hover:text-white transition-quick">Portfolio</a>
+                        <a href="about_professional_story.html" class="block text-secondary-400 hover:text-white transition-quick">À Propos</a>
+                        <a href="services_transparent_pricing.html" class="block text-secondary-400 hover:text-white transition-quick">Services</a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-inter font-semibold text-lg mb-4">Services</h3>
+                    <div class="space-y-2">
+                        <div class="text-secondary-400">Développement Web</div>
+                        <div class="text-secondary-400">Applications React</div>
+                        <div class="text-secondary-400">API Node.js</div>
+                        <div class="text-secondary-400">E-commerce</div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-inter font-semibold text-lg mb-4">Contact</h3>
+                    <div class="space-y-2">
+                        <div class="text-secondary-400">Casablanca, Maroc</div>
+                        <a href="mailto:anass@portfolio.ma" class="block text-secondary-400 hover:text-white transition-quick">anass@portfolio.ma</a>
+                        <a href="https://wa.me/212600000000" class="block text-secondary-400 hover:text-white transition-quick">+212 6 00 00 00 00</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-secondary-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-secondary-400 text-sm">
+                    © 2025 Anass Portfolio Pro. Tous droits réservés.
+                </div>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="https://github.com/anass" class="text-secondary-400 hover:text-white transition-quick">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/anass" class="text-secondary-400 hover:text-white transition-quick">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/anass" class="text-secondary-400 hover:text-white transition-quick">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Currency toggle functionality
+        const currencyToggles = document.querySelectorAll('.currency-toggle');
+        const madPrices = document.querySelectorAll('.price-mad');
+        const eurPrices = document.querySelectorAll('.price-eur');
+
+        currencyToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const currency = this.dataset.currency;
+                
+                // Update toggle buttons
+                currencyToggles.forEach(btn => {
+                    btn.classList.remove('bg-primary', 'text-white');
+                    btn.classList.add('text-secondary-600');
+                });
+                this.classList.add('bg-primary', 'text-white');
+                this.classList.remove('text-secondary-600');
+
+                // Show/hide prices
+                if (currency === 'mad') {
+                    madPrices.forEach(price => price.classList.remove('hidden'));
+                    eurPrices.forEach(price => price.classList.add('hidden'));
+                } else {
+                    madPrices.forEach(price => price.classList.add('hidden'));
+                    eurPrices.forEach(price => price.classList.remove('hidden'));
+                }
+            });
+        });
+
+        // Investment Calculator
+        const projectTypeInputs = document.querySelectorAll('input[name="project-type"]');
+        const pagesCountSelect = document.getElementById('pages-count');
+        const featureCheckboxes = document.querySelectorAll('input[type="checkbox"][data-price]');
+        const timelineSelect = document.getElementById('timeline');
+
+        const basePrices = {
+            website: { mad: 12000, eur: 1200 },
+            ecommerce: { mad: 25000, eur: 2500 },
+            webapp: { mad: 50000, eur: 5000 }
+        };
+
+        function updateCalculator() {
+            const selectedProjectType = document.querySelector('input[name="project-type"]:checked').value;
+            const pagesCount = parseInt(pagesCountSelect.value);
+            const timelineMultiplier = parseFloat(timelineSelect.value);
+            
+            let basePrice = basePrices[selectedProjectType];
+            
+            // Adjust for pages
+            if (pagesCount > 5) {
+                basePrice.mad += (pagesCount - 5) * 1000;
+                basePrice.eur += (pagesCount - 5) * 100;
+            }
+
+            // Calculate features price
+            let featuresPrice = { mad: 0, eur: 0 };
+            featureCheckboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    featuresPrice.mad += parseInt(checkbox.dataset.price);
+                    featuresPrice.eur += parseInt(checkbox.dataset.price) / 10;
+                }
+            });
+
+            // Calculate timeline adjustment
+            const subtotal = { 
+                mad: basePrice.mad + featuresPrice.mad,
+                eur: basePrice.eur + featuresPrice.eur
+            };
+            
+            const timelineAdjustment = {
+                mad: subtotal.mad * timelineMultiplier,
+                eur: subtotal.eur * timelineMultiplier
+            };
+
+            const total = {
+                mad: subtotal.mad + timelineAdjustment.mad,
+                eur: subtotal.eur + timelineAdjustment.eur
+            };
+
+            // Update display
+            document.getElementById('base-price-mad').textContent = basePrice.mad.toLocaleString() + ' MAD';
+            document.getElementById('base-price-eur').textContent = basePrice.eur.toLocaleString() + ' EUR';
+            
+            document.getElementById('features-price-mad').textContent = featuresPrice.mad.toLocaleString() + ' MAD';
+            document.getElementById('features-price-eur').textContent = featuresPrice.eur.toLocaleString() + ' EUR';
+            
+            document.getElementById('timeline-adjustment-mad').textContent = 
+                (timelineAdjustment.mad >= 0 ? '+' : '') + timelineAdjustment.mad.toLocaleString() + ' MAD';
+            document.getElementById('timeline-adjustment-eur').textContent = 
+                (timelineAdjustment.eur >= 0 ? '+' : '') + timelineAdjustment.eur.toLocaleString() + ' EUR';
+            
+            document.getElementById('total-price-mad').textContent = Math.round(total.mad).toLocaleString() + ' MAD';
+            document.getElementById('total-price-eur').textContent = Math.round(total.eur).toLocaleString() + ' EUR';
+
+            // Calculate savings (assuming agency charges 1.5x more)
+            const savings = {
+                mad: Math.round(total.mad * 0.5),
+                eur: Math.round(total.eur * 0.5)
+            };
+            
+            document.getElementById('savings-mad').textContent = 
+                'Vous économisez ~' + savings.mad.toLocaleString() + ' MAD';
+            document.getElementById('savings-eur').textContent = 
+                'Vous économisez ~' + savings.eur.toLocaleString() + ' EUR';
+        }
+
+        // Add event listeners
+        projectTypeInputs.forEach(input => input.addEventListener('change', updateCalculator));
+        pagesCountSelect.addEventListener('change', updateCalculator);
+        featureCheckboxes.forEach(checkbox => checkbox.addEventListener('change', updateCalculator));
+        timelineSelect.addEventListener('change', updateCalculator);
+
+        // Initial calculation
+        updateCalculator();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-elevated');
+            } else {
+                header.classList.remove('shadow-elevated');
+            }
+        });
+    </script>
+</body>
+</html>
