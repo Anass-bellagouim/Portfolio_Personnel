@@ -45,7 +45,7 @@
             <!-- Bouton pour télécharger le CV -->
             <div class="flex items-center space-x-4">
                 <!-- Bouton télécharger le CV avec icône -->
-                <a href="assets/resume.pdf" download="Anass_Belagouim_CV.pdf" 
+                <a id="download-cv" href="../img/CV - ANASS AIT BELAGOUIM.pdf" download="Anass_Belagouim_CV.pdf" 
                    class="btn-primary flex items-center space-x-2"
                    aria-label="Télécharger le CV">
                     <!-- Icône -->
@@ -586,6 +586,28 @@
                 header.classList.remove('shadow-elevated');
             }
         });
+
+        document.getElementById('download-cv').addEventListener('click', async function(e){
+  // Evite l'ouverture normale si on veut forcer le téléchargement par JS
+  e.preventDefault();
+  const url = this.href;
+  try {
+    const res = await fetch(url, { method: 'GET' });
+    if (!res.ok) throw new Error('Network response was not ok');
+    const blob = await res.blob();
+    const blobUrl = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = blobUrl;
+    a.download = 'Anass_Belagouim_CV.pdf'; // nom fichier pour le téléchargement
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    window.URL.revokeObjectURL(blobUrl);
+  } catch (err) {
+    // si fetch ma khdamech, fallback: ouverture normale (l'utilisateur peut enregistrer manuellement)
+    window.open(url, '_blank');
+  }
+});
     </script>
 </body>
 </html>
