@@ -37,6 +37,48 @@
   animation: slideFadeIn 0.6s ease forwards;
 }
 
+.skills-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.skills-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: skills-marquee-left var(--marquee-duration, 80s) linear infinite;
+}
+
+.skills-marquee:hover .skills-track {
+  animation-play-state: paused;
+}
+
+.skills-track .card {
+  min-width: 150px;
+  flex: 0 0 auto;
+}
+
+@keyframes skills-marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-track {
+    gap: 16px;
+    animation-duration: var(--marquee-duration, 34s);
+  }
+
+  .skills-track .card {
+    min-width: 130px;
+  }
+}
+
 
 
 </style>
@@ -180,8 +222,9 @@
                 </p>
             </div>
 
-            <!-- Skills Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <!-- Skills Marquee -->
+            <div class="skills-marquee">
+            <div class="skills-track" id="skills-track">
                 <!-- HTML -->
                 <div class="group card text-center hover:shadow-elevated transition-smooth cursor-pointer">
                     <div class="w-16 h-16 mx-auto mb-4 bg-#FEFEFE rounded-lg flex items-center justify-center group-hover:bg-#FEFEFE transition-smooth">
@@ -339,6 +382,7 @@
                   <h3 class="font-inter font-semibold text-secondary-900 mb-2">Laravel</h3>
                 </div>
             </div>
+            </div>
         </div>
     </section>
 
@@ -354,8 +398,9 @@
                 </p>
             </div>
 
-            <!-- Skills Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <!-- Skills Marquee -->
+            <div class="skills-marquee">
+            <div class="skills-track" id="soft-skills-track">
                 <!-- Communication -->
                 <div class="group card text-center hover:shadow-elevated transition-smooth cursor-pointer">
                     <div class="w-16 h-16 mx-auto mb-4 bg-white rounded-lg flex items-center justify-center group-hover:bg-white transition-smooth">
@@ -411,6 +456,7 @@
                 </div>
 
                 
+            </div>
             </div>
         </div>
     </section>
@@ -714,6 +760,33 @@
                 header.classList.remove('shadow-elevated');
             }
         });
+
+        // Duplicate skills for seamless marquee
+        const skillsTrack = document.getElementById('skills-track');
+        if (skillsTrack) {
+            skillsTrack.innerHTML += skillsTrack.innerHTML;
+        }
+
+        const softSkillsTrack = document.getElementById('soft-skills-track');
+        if (softSkillsTrack) {
+            softSkillsTrack.innerHTML += softSkillsTrack.innerHTML;
+        }
+
+        function setMarqueeSpeed(track, pixelsPerSecond) {
+            if (!track) return;
+            const distance = track.scrollWidth / 2;
+            const duration = Math.max(distance / pixelsPerSecond, 10);
+            track.style.setProperty('--marquee-duration', `${duration}s`);
+        }
+
+        function updateMarquees() {
+            const speed = 60;
+            setMarqueeSpeed(skillsTrack, speed);
+            setMarqueeSpeed(softSkillsTrack, speed);
+        }
+
+        window.addEventListener('load', updateMarquees);
+        window.addEventListener('resize', updateMarquees);
 
         document.getElementById('download-cv').addEventListener('click', async function(e){
   // Evite l'ouverture normale si on veut forcer le téléchargement par JS
