@@ -170,34 +170,73 @@
   }
 
   function initHeroStack() {
-    var stack = document.querySelector('.hero-card-stack');
-    if (!stack) return;
-    if (stack.dataset.running) return;
+    var stacks = document.querySelectorAll('.hero-card-stack');
+    if (!stacks.length) return;
 
     var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (prefersReduced) return;
 
-    var cards = Array.prototype.slice.call(stack.querySelectorAll('.hero-card'));
-    if (cards.length < 2) return;
+    stacks.forEach(function (stack) {
+      if (stack.dataset.running) return;
 
-    stack.dataset.running = 'true';
+      var cards = Array.prototype.slice.call(stack.querySelectorAll('.hero-card'));
+      if (cards.length < 2) return;
 
-    setInterval(function () {
-      var front = stack.querySelector('.hero-card--front');
-      var back = stack.querySelector('.hero-card--back');
-      if (!front || !back) return;
+      stack.dataset.running = 'true';
 
-      front.classList.remove('hero-card--front');
-      front.classList.add('hero-card--exit');
+      var interval = parseInt(stack.dataset.interval || '2600', 10);
 
-      back.classList.remove('hero-card--back');
-      back.classList.add('hero-card--front');
+      function swapCards() {
+        var front = stack.querySelector('.hero-card--front');
+        var back = stack.querySelector('.hero-card--back');
+        if (!front || !back) return;
 
-      front.addEventListener('transitionend', function handler() {
-        front.classList.remove('hero-card--exit');
+        front.classList.remove('hero-card--front');
         front.classList.add('hero-card--back');
-        front.removeEventListener('transitionend', handler);
-      });
-    }, 2400);
+
+        back.classList.remove('hero-card--back');
+        back.classList.add('hero-card--front');
+      }
+
+      var timer = null;
+      var isAlt = stack.classList.contains('hero-card-stack--alt');
+      var autoplay = !isAlt;
+      if (stack.dataset.autoplay === 'true') autoplay = true;
+      if (stack.dataset.autoplay === 'false') autoplay = false;
+
+      if (autoplay) {
+        timer = setInterval(swapCards, interval);
+      }
+
+      if (isAlt && stack.dataset.hoverSwap !== 'css') {
+        var flipped = false;
+
+        function handleEnter() {
+          if (timer) {
+            clearInterval(timer);
+            timer = null;
+          }
+          if (!flipped) {
+            swapCards();
+            flipped = true;
+          }
+        }
+
+        function handleLeave() {
+          if (flipped) {
+            swapCards();
+            flipped = false;
+          }
+          if (autoplay && !timer) {
+            timer = setInterval(swapCards, interval);
+          }
+        }
+
+        stack.addEventListener('mouseenter', handleEnter);
+        stack.addEventListener('mouseleave', handleLeave);
+        stack.addEventListener('pointerenter', handleEnter);
+        stack.addEventListener('pointerleave', handleLeave);
+      }
+    });
   }
 })();
