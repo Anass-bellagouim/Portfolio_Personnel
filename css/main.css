@@ -2599,3 +2599,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Marquee drag */
+.skills-marquee {
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.skills-marquee.is-dragging {
+  cursor: grabbing;
+}
+

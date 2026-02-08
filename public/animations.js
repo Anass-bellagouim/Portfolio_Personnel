@@ -22,6 +22,9 @@
     var speed = 60;
     setMarqueeSpeed(skillsTrack, speed);
     setMarqueeSpeed(softSkillsTrack, speed);
+
+    initMarqueeDrag(skillsTrack);
+    initMarqueeDrag(softSkillsTrack);
   }
 
   function initStagger(container) {
@@ -88,6 +91,83 @@
     initHeroStack();
     window.addEventListener('resize', initMarquees);
   });
+
+  function initMarqueeDrag(track) {
+    if (!track) return;
+    if (track.dataset.dragReady) return;
+    track.dataset.dragReady = 'true';
+
+    var marquee = track.parentElement;
+    if (!marquee) return;
+
+    var dragging = false;
+    var startX = 0;
+    var startTranslate = 0;
+
+    function getCurrentTranslateX() {
+      var style = window.getComputedStyle(track);
+      var matrix = style.transform;
+      if (matrix && matrix !== 'none') {
+        var values = matrix.match(/matrix\\(([^)]+)\\)/);
+        if (values && values[1]) {
+          var parts = values[1].split(',');
+          return parseFloat(parts[4]) || 0;
+        }
+      }
+      return 0;
+    }
+
+    function getDurationSeconds() {
+      var style = window.getComputedStyle(track);
+      var dur = style.animationDuration || '0s';
+      return parseFloat(dur) || 0;
+    }
+
+    function onPointerDown(e) {
+      e.preventDefault();
+      dragging = true;
+      marquee.classList.add('is-dragging');
+      track.style.animationPlayState = 'paused';
+      track.style.animationDelay = '0s';
+      startX = e.clientX;
+      startTranslate = getCurrentTranslateX();
+      if (track.setPointerCapture) {
+        track.setPointerCapture(e.pointerId);
+      }
+    }
+
+    function onPointerMove(e) {
+      if (!dragging) return;
+      e.preventDefault();
+      var delta = e.clientX - startX;
+      track.style.transform = 'translateX(' + (startTranslate + delta) + 'px)';
+    }
+
+    function onPointerUp(e) {
+      if (!dragging) return;
+      dragging = false;
+      marquee.classList.remove('is-dragging');
+
+      var current = getCurrentTranslateX();
+      var distance = track.scrollWidth / 2;
+      var duration = getDurationSeconds();
+      if (distance > 0 && duration > 0) {
+        var progress = Math.abs(current) / distance;
+        var delay = -(progress * duration);
+        track.style.animationDelay = delay + 's';
+      }
+
+      track.style.transform = '';
+      track.style.animationPlayState = 'running';
+      if (track.releasePointerCapture) {
+        track.releasePointerCapture(e.pointerId);
+      }
+    }
+
+    track.addEventListener('pointerdown', onPointerDown);
+    window.addEventListener('pointermove', onPointerMove);
+    window.addEventListener('pointerup', onPointerUp);
+  }
 
   function initHeroStack() {
     var stack = document.querySelector('.hero-card-stack');
