@@ -6,6 +6,20 @@
     <title>Contact & Collaboration - Anass | Développeur Full-Stack Maroc</title>
     <meta name="description" content="Contactez Anass pour votre projet web. Consultation gratuite, devis instantané, support WhatsApp. Développeur Full-Stack basé à Taroudant, Maroc." />
     <link rel="stylesheet" href="../css/main.css" />
+
+<script>
+  (function() {
+    const storedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = storedTheme ? storedTheme : (prefersDark ? 'dark' : 'light');
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  })();
+</script>
+
         <!-- Favicon -->
 <link rel="icon" type="image/png" href="../img/me.jpg">
 <style>
@@ -41,9 +55,17 @@
 
             <!-- Bouton pour télécharger le CV -->
             <div class="flex items-center space-x-4">
-                <!-- Bouton télécharger le CV avec icône -->
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le mode sombre" aria-pressed="false">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+                    </svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="4" stroke-width="2"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+                    </svg>
+                </button>
                 <a id="download-cv" href="../img/CV - ANASS AIT BELAGOUIM.pdf" download="Anass_Belagouim_CV.pdf" 
-                   class="btn-primary flex items-center space-x-2"
+                   class="btn-primary flex items-center space-x-2 hidden md:flex"
                    aria-label="Télécharger le CV">
                     <!-- Icône -->
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" 
@@ -384,6 +406,28 @@
     window.open(url, '_blank');
   }
 });
-    </script>
+    
+        const themeToggle = document.getElementById('theme-toggle');
+        const setTheme = (theme) => {
+            if (theme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                if (themeToggle) themeToggle.setAttribute('aria-pressed', 'true');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                if (themeToggle) themeToggle.setAttribute('aria-pressed', 'false');
+            }
+        };
+
+        if (themeToggle) {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            themeToggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+            themeToggle.addEventListener('click', function() {
+                const nowDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                setTheme(nowDark ? 'light' : 'dark');
+            });
+        }
+</script>
 </body>
 </html>

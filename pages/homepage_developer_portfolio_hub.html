@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="../css/main.css" />
         <!-- Favicon -->
 <link rel="icon" type="image/png" href="../img/me1.jpg">
+<script>
+  (function() {
+    const storedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = storedTheme ? storedTheme : (prefersDark ? 'dark' : 'light');
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  })();
+</script>
 <style>
   @media (max-width: 1399px) {
     .nav-padding-mobile{
@@ -102,9 +114,17 @@
 
             <!-- Bouton pour télécharger le CV -->
             <div class="flex items-center space-x-4">
-                <!-- Bouton télécharger le CV avec icône -->
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le mode sombre" aria-pressed="false">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+                    </svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="4" stroke-width="2"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+                    </svg>
+                </button>
                 <a id="download-cv" href="../img/CV - ANASS AIT BELAGOUIM.pdf" download="Anass_Belagouim_CV.pdf" 
-                   class="btn-primary flex items-center space-x-2"
+                   class="btn-primary flex items-center space-x-2 hidden md:flex"
                    aria-label="Télécharger le CV">
                     <!-- Icône -->
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" 
@@ -136,6 +156,16 @@
                 <a href="about_professional_story.html" class="block text-secondary-600 hover:text-primary transition-quick">À Propos</a>
                 <a href="case_studies_deep_project_analysis.html" class="block text-secondary-600 hover:text-primary transition-quick">Études de Cas</a>
                 <a href="contact_collaboration_hub.html" class="block text-secondary-600 hover:text-primary transition-quick">Contact</a>
+                <div class="pt-2">
+                    <a id="download-cv-mobile" href="../img/CV - ANASS AIT BELAGOUIM.pdf" download="Anass_Belagouim_CV.pdf"
+                       class="btn-primary inline-flex items-center space-x-2" aria-label="T&eacute;l&eacute;charger le CV">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                            <path d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H12M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M17.5 15V21M17.5 21L15 18.5M17.5 21L20 18.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <span>T&eacute;l&eacute;charger le CV</span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -786,6 +816,28 @@
     window.open(url, '_blank');
   }
 });
-    </script>
+    
+        const themeToggle = document.getElementById('theme-toggle');
+        const setTheme = (theme) => {
+            if (theme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                if (themeToggle) themeToggle.setAttribute('aria-pressed', 'true');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                if (themeToggle) themeToggle.setAttribute('aria-pressed', 'false');
+            }
+        };
+
+        if (themeToggle) {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            themeToggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+            themeToggle.addEventListener('click', function() {
+                const nowDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                setTheme(nowDark ? 'light' : 'dark');
+            });
+        }
+</script>
 </body>
 </html>
