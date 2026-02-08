@@ -85,6 +85,39 @@
   onReady(function () {
     initMarquees();
     initReveals();
+    initHeroStack();
     window.addEventListener('resize', initMarquees);
   });
+
+  function initHeroStack() {
+    var stack = document.querySelector('.hero-card-stack');
+    if (!stack) return;
+    if (stack.dataset.running) return;
+
+    var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) return;
+
+    var cards = Array.prototype.slice.call(stack.querySelectorAll('.hero-card'));
+    if (cards.length < 2) return;
+
+    stack.dataset.running = 'true';
+
+    setInterval(function () {
+      var front = stack.querySelector('.hero-card--front');
+      var back = stack.querySelector('.hero-card--back');
+      if (!front || !back) return;
+
+      front.classList.remove('hero-card--front');
+      front.classList.add('hero-card--exit');
+
+      back.classList.remove('hero-card--back');
+      back.classList.add('hero-card--front');
+
+      front.addEventListener('transitionend', function handler() {
+        front.classList.remove('hero-card--exit');
+        front.classList.add('hero-card--back');
+        front.removeEventListener('transitionend', handler);
+      });
+    }, 2400);
+  }
 })();
