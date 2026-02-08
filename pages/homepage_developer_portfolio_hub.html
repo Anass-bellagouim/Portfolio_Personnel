@@ -79,8 +79,6 @@
   }
 }
 
-
-
 </style>
 
 </head>
@@ -147,7 +145,7 @@
         <div class="container-max">
             <div style="margin-top: 40px;" class="grid lg:grid-cols-2 gap-12 items-center">
                 <!-- Hero Content -->
-                <div class="space-y-8 animate-fade-in">
+                <div class="space-y-8 animate-fade-in reveal reveal-left">
                     <div class="space-y-4">
                         <h1 class="text-4xl lg:text-5xl font-inter font-bold text-secondary-900 leading-tight">
                             Créateur de Solutions Digitales pour 
@@ -195,9 +193,9 @@
                 </div>
 
                 <!-- Hero Visual -->
-                <div class="relative animate-slide-up">
+                <div class="relative animate-slide-up reveal reveal-right">
                     <!-- Profile Image -->
-                    <div class="relative z-10 mx-auto w-80 h-80 lg:w-96 lg:h-96">
+                    <div class="relative z-10 mx-auto w-80 h-80 lg:w-96 lg:h-96 float-slow">
                         <div class="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-2xl transform rotate-6"></div>
                         <div class="relative bg-white rounded-2xl p-2 shadow-elevated">
                             <img src="../img/me.jpg" alt="Anass - Développeur Full-Stack" class="w-full h-full object-cover rounded-xl" onerror="this.src=''; this.onerror=null;" />
@@ -474,7 +472,7 @@
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 stagger">
                 <!-- Success Story 1 -->
                 <div class="card group hover:shadow-elevated transition-smooth">
                     <div class="relative mb-6 overflow-hidden rounded-lg">
@@ -730,6 +728,7 @@
         </div>
     </footer>
 
+    <script src="../public/animations.js"></script>
     <script>
         // Mobile menu toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', function() {
@@ -760,33 +759,6 @@
                 header.classList.remove('shadow-elevated');
             }
         });
-
-        // Duplicate skills for seamless marquee
-        const skillsTrack = document.getElementById('skills-track');
-        if (skillsTrack) {
-            skillsTrack.innerHTML += skillsTrack.innerHTML;
-        }
-
-        const softSkillsTrack = document.getElementById('soft-skills-track');
-        if (softSkillsTrack) {
-            softSkillsTrack.innerHTML += softSkillsTrack.innerHTML;
-        }
-
-        function setMarqueeSpeed(track, pixelsPerSecond) {
-            if (!track) return;
-            const distance = track.scrollWidth / 2;
-            const duration = Math.max(distance / pixelsPerSecond, 10);
-            track.style.setProperty('--marquee-duration', `${duration}s`);
-        }
-
-        function updateMarquees() {
-            const speed = 60;
-            setMarqueeSpeed(skillsTrack, speed);
-            setMarqueeSpeed(softSkillsTrack, speed);
-        }
-
-        window.addEventListener('load', updateMarquees);
-        window.addEventListener('resize', updateMarquees);
 
         document.getElementById('download-cv').addEventListener('click', async function(e){
   // Evite l'ouverture normale si on veut forcer le téléchargement par JS

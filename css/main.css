@@ -2506,3 +2506,55 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
   }
 }
+/* Motion & reveal helpers */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.reveal-left {
+  transform: translateX(-24px);
+}
+
+.reveal.reveal-right {
+  transform: translateX(24px);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.stagger > * {
+  transition-delay: var(--stagger-delay, 0ms);
+}
+
+.float-slow {
+  animation: float-slow 9s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .float-slow,
+  .skills-track {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
