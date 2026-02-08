@@ -2647,6 +2647,22 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 3;
 }
 
+.hero-card-stack--alt.is-tapped .hero-card--front {
+  transform: translate3d(-22px, 18px, -80px) rotateX(-4deg) rotateY(10deg) rotateZ(-4deg) scale(0.94);
+  opacity: 0.65;
+  filter: saturate(0.85);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+  z-index: 1;
+}
+
+.hero-card-stack--alt.is-tapped .hero-card--back {
+  transform: translate3d(0, -10px, 80px) rotateX(8deg) rotateY(-8deg) rotateZ(2deg);
+  opacity: 1;
+  filter: none;
+  box-shadow: 0 26px 60px rgba(15, 23, 42, 0.2);
+  z-index: 3;
+}
+
 @keyframes hero-sheen {
   0% {
     transform: translateX(-40%);

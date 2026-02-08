@@ -237,6 +237,13 @@
         stack.addEventListener('pointerenter', handleEnter);
         stack.addEventListener('pointerleave', handleLeave);
       }
+
+      if (isAlt && stack.dataset.hoverSwap === 'css') {
+        stack.addEventListener('touchstart', function (e) {
+          e.preventDefault();
+          stack.classList.toggle('is-tapped');
+        });
+      }
     });
   }
 })();
